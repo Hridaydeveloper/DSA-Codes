@@ -14,13 +14,14 @@ class Solution:
             (5, "V"),
             (4, "IV"),
             (1, "I")
+            #(value, symbol)
         ]
 
         res = []
 
-        for value, numeral in values:
+        for value, symbol in values:
             while num >= value:
-                res.append(numeral)
+                res.append(symbol)
                 num -= value
 
         return ''.join(res)
